@@ -7,3 +7,5 @@ A ready to use simple boilerplate for React Apps.
 * Clone the repo
 * Run `npm install`
 * Run `npm start`
+
+CM
