@@ -20,10 +20,10 @@ class App extends Component {
                 <h1>Header</h1>
                 <ScrollPage{...options}>
                     <Section>
-                        <video autoPlay muted loop id="myVideo">
+                        {/*<video autoPlay muted loop id="myVideo">*/}
                             <img src={img1} />
                             {/*<source src="../../resources/newport_surf.mp4" type="video/mp4" />*/}
-                        </video>
+                        {/*</video>*/}
                     </Section>
                     <Section>
                         <img src={img2} />
