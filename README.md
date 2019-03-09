@@ -8,4 +8,3 @@ A ready to use simple boilerplate for React Apps.
 * Run `npm install`
 * Run `npm start`
 
-CM
