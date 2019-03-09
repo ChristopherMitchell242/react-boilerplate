@@ -23,6 +23,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scrollpage": "^1.0.2"
