@@ -15,11 +15,15 @@ module.exports = {
         use: ["babel-loader"]
       },
       {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
         // exclude: path.resolve(__dirname, 'resources/'),
         use: [{
