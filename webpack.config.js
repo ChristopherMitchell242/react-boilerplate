@@ -19,14 +19,14 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(png|jpg|gif)$/,
         /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
-        exclude: path.resolve(__dirname, '../src/resources'),
+        // exclude: path.resolve(__dirname, 'resources/'),
         use: [{
           loader: 'file-loader',
           options: {
-            name: '[name].[ext]'
-            // outputPath: 'images/'
+            name: '[name].[ext]',
+            outputPath: '.'
           }
         }]
       },
