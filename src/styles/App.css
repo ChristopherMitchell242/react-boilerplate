@@ -1,25 +1,15 @@
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    /*baSckground-color: #f1f1f1;*/
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+.background {
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 134%;
 }
-.navbar li {
-    display: inline;
-}
-
-.navbar ul .nav {
-    float: right;
-}
-
-.navbar img {
-    width: 34%;
-}
-
-.filter-green{
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

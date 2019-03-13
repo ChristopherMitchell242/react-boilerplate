@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 
-import img1 from "../../resources/chilling_out_back.png";
+import img1 from "../../resources/bg.jpg";
 
 class PageOne extends Component {
     render() {
         return (
             <div className="section">
-                <img src={img1} />
-                {/*<p>Section 1 (welcome to fullpage.js)</p>*/}
-                {/*<button onClick={() => fullpageApi.moveSectionDown()}>*/}
-                {/*Click me to move down*/}
-                {/*</button>*/}
+                <div className="background">
+                    <img src={img1} />
+                </div>
             </div>
         )
     }

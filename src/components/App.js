@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-// import { ScrollPage, Section } from 'react-scrollpage';
+
 import ReactFullpage from '@fullpage/react-fullpage';
+import Zoom from 'react-reveal/Zoom';
 
 import PageOne from './PageOne';
 import PageTwo from './PageTwo';
@@ -12,18 +13,21 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
+                {/*<Zoom>*/}
+                    {/*<Navbar/>*/}
+                {/*</Zoom>*/}
                 <ReactFullpage render={({ state, fullpageApi }) => {
                     return (
-                        <ReactFullpage.Wrapper>
-                            <PageOne/>
-                            <PageTwo/>
-                        </ReactFullpage.Wrapper>
+                        <div>
+                            <ReactFullpage.Wrapper>
+                                <PageOne />
+                                <PageTwo />
+                            </ReactFullpage.Wrapper>
+                        </div>
                     );
                 }}
                 />
             </div>
-
         )
     }
 }
