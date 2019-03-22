@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import img from "../../resources/niseko-snow-forecasting-tips-01.jpg";
+import img from "../../resources/niseko-night-skiing-01.jpg";
 
 class PageTwo extends Component {
     render() {

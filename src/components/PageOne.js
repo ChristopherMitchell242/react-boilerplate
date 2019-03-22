@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-import img1 from "../../resources/bg.jpg";
+import img from "../../resources/bg.jpg";
+import Logo from "../../resources/Lodge401.svg";
 
 class PageOne extends Component {
     render() {
         return (
             <div className="section">
                 <div className="background">
-                    <img src={img1} />
+                    <img src={img} />
                 </div>
             </div>
         )
