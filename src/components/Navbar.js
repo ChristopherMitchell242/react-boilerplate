@@ -7,9 +7,9 @@ class Navbar extends Component {
             <div className="navbar">
                 <img src={Logo} />
                 <ul>
-                    <li className="nav"><button onClick={() => console.log('click')}>Section One</button></li>
-                    <li className="nav"><button onClick={() => console.log('click')}>Section Two</button></li>
-                    <li className="nav"><button onClick={() => console.log('click')}>Section Three</button></li>
+                    <li className="nav"><a className="active" onClick={() => console.log('click')}>Section One</a></li>
+                    <li className="nav"><a onClick={() => console.log('click')}>Section Two</a></li>
+                    <li className="nav"><a onClick={() => console.log('click')}>Section Three</a></li>
                 </ul>
             </div>
         )
