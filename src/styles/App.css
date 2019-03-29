@@ -20,12 +20,13 @@
 
 .solid {
     height: 9.5vw;
-    min-height: 100px;
+    min-height: 75px;
+    /*max-height: 127px;*/
     background-color: dimgrey;
-    -webkit-transition: all 0.8s linear;
-    -moz-transition: all 0.8s linear;
-    -o-transition: all 0.8s linear;
-    transition: all 0.8s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 
 .expandedNavbar {
@@ -43,12 +44,19 @@
     top: 0;
     padding: 1.5% 1%;
     width: 30%;
-    min-width: 300px;
+    min-width: 100px;
+    /*max-width: 350px;*/
     height: auto;
     -webkit-transition: all 0.8s linear;
     -moz-transition: all 0.8s linear;
     -o-transition: all 0.8s linear;
     transition: all 0.8s linear;
+}
+
+.nav > a:hover {
+    border-bottom: 4px solid white;
+    border-bottom: 4px solid white;
+    text-decoration: none;
 }
 
 .expandedNavButtons {
@@ -68,7 +76,7 @@
 .nav {
     display: inline-flex;
     float: right;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .nav a {
@@ -77,3 +85,55 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+@media (max-width: 800px) {
+    .nav a {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 650px) {
+    .navbar {
+        display: none;
+    }
+    .nav {
+        padding-right: 10%;
+    }
+    .nav a {
+        font-size: 1.0em;
+    }
+    .navbuttons {
+        padding-top: 6vw;
+    }
+}
+
+.bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+}
+
+.bm-item:hover {
+    color: white;
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+

@@ -30,24 +30,26 @@ class App extends Component {
         };
 
         return (
-            <div>
+            <div id="outer-container">
                 <Navbar expandedNav={this.state.expandNav} />
-                <ReactFullpage
-                    {...options}
-                    render={({ state, fullpageApi }) => {
-                    return (
-                        <div>
-                            <ReactFullpage.Wrapper>
-                                <PageOne />
-                                <PageTwo />
-                                <PageThree />
-                                <PageFour />
-                                <PageFive />
-                            </ReactFullpage.Wrapper>
-                        </div>
-                    );
-                }}
-                />
+                <div id="page-wrap">
+                    <ReactFullpage
+                        {...options}
+                        render={({ state, fullpageApi }) => {
+                            return (
+                                <div>
+                                    <ReactFullpage.Wrapper>
+                                        <PageOne />
+                                        <PageTwo />
+                                        <PageThree />
+                                        <PageFour />
+                                        <PageFive />
+                                    </ReactFullpage.Wrapper>
+                                </div>
+                            );
+                        }}
+                    />
+                </div>
             </div>
         )
     }
