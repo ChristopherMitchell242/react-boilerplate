@@ -27,7 +27,8 @@ class App extends Component {
         const options = {
             scrollingSpeed: 1000,
             onLeave: (origin, dest, direction) => handlePageChange(origin, dest, direction),
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage']
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+            menu: "#nav_menu"
         };
 
         return (
