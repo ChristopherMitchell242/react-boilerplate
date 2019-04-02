@@ -1,51 +1,52 @@
-import React, { Component } from "react";
-
 import ReactFullpage from '@fullpage/react-fullpage';
+import React, {Component} from 'react';
+
+import '../styles/App.css';
+import Navbar from './Navbar';
 
 import PageOne from './PageOne';
 import PageTwo from './PageTwo';
-import PageThree from './PageThree';
-import PageFour from './PageFour';
-import PageFive from './PageFive';
-import Navbar from './Navbar'
+import ParticleWrapper from './Particle';
 
-import '../styles/App.css';
 class App extends Component {
 
-    constructor(props) {
+    constructor (props) {
         super(props);
         this.state = {
             expandNav: true
         };
     }
 
-    render() {
-        const handlePageChange  = (origin, dest, direction) => {
-            dest.isFirst === true ? this.setState({expandNav: true}) : this.setState({expandNav: false})
+    render () {
+        const handlePageChange = (origin, dest, direction) => {
+            dest.isFirst === true ? this.setState({expandNav: true}) : this.setState({expandNav: false});
         };
 
         const options = {
             scrollingSpeed: 1000,
             onLeave: (origin, dest, direction) => handlePageChange(origin, dest, direction),
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
-            menu: "#nav_menu"
+            anchors: ['firstPage'],
+            menu: '#nav_menu'
         };
 
         return (
-            <div id="outer-container">
-                <Navbar expandedNav={this.state.expandNav} />
+            <div id="outer-container" className="outer-container">
+
+                <ParticleWrapper/>
+
+                <Navbar expandedNav={this.state.expandNav}/>
                 <div id="page-wrap">
                     <ReactFullpage
                         {...options}
-                        render={({ state, fullpageApi }) => {
+                        render={({state, fullpageApi}) => {
                             return (
                                 <div>
                                     <ReactFullpage.Wrapper>
-                                        <PageOne />
+                                        <PageOne/>
                                         <PageTwo />
-                                        <PageThree />
-                                        <PageFour />
-                                        <PageFive />
+                                        {/*<PageThree />*/}
+                                        {/*<PageFour />*/}
+                                        {/*<PageFive />*/}
                                     </ReactFullpage.Wrapper>
                                 </div>
                             );
@@ -53,7 +54,7 @@ class App extends Component {
                     />
                 </div>
             </div>
-        )
+        );
     }
 }
 

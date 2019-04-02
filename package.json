@@ -30,6 +30,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-fullpage": "^0.1.19",
+    "react-particles-js": "^2.5.1",
     "svg-inline-loader": "^0.8.0"
   }
 }
